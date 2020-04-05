@@ -20,9 +20,13 @@ namespace AppViews.Master
         {
             Detail = new Controls.ActivityIndicatorPage();
         }        
-            private void GoProgressBarPage(object sender, EventArgs args)
+        private void GoProgressBarPage(object sender, EventArgs args)
         {
             Detail = new Controls.ProgressBarPage();
+        }
+        private void GoBoxViewPage (object sender, EventArgs args)
+        {
+            Detail = new Controls.BoxViewPage();
         }
     }
 }
