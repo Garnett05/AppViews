@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppViews.Controls.LabelPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <!-- O primeiro bloco representa as propriedades exclusivas da Label, e abaixo as que são comum ao grupo de views-->
+            <Label                                  
+                Text="Let's go Celtics! Let's go Celtics! Let's go Celtics! Let's go Celtics! Let's go Celtics! Let's go Celtics! "
+                TextColor="White"
+                FontSize="Title"
+                FontAttributes="Italic"
+                LineBreakMode="WordWrap"                
+                   
+                BackgroundColor="Black"   
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

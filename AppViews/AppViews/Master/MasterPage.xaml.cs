@@ -28,5 +28,9 @@ namespace AppViews.Master
         {
             Detail = new Controls.BoxViewPage();
         }
+        private void GoLabelPage (object sender, EventArgs args)
+        {
+            Detail = new Controls.LabelPage();
+        }
     }
 }
