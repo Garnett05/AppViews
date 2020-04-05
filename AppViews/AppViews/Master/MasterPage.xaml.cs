@@ -32,5 +32,9 @@ namespace AppViews.Master
         {
             Detail = new Controls.LabelPage();
         }
+        private void GoButtonPage (object sender, EventArgs args)
+        {
+            Detail = new Controls.ButtonPage();
+        }
     }
 }
