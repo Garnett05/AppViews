@@ -10,11 +10,19 @@ using Xamarin.Forms.Xaml;
 namespace AppViews.Master
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MasterPage : ContentPage
+    public partial class MasterPage : MasterDetailPage
     {
         public MasterPage()
         {
             InitializeComponent();
+        }
+        private void GoActivityIndicatorPage (object sender, EventArgs args)
+        {
+            Detail = new Controls.ActivityIndicatorPage();
+        }        
+            private void GoProgressBarPage(object sender, EventArgs args)
+        {
+            Detail = new Controls.ProgressBarPage();
         }
     }
 }

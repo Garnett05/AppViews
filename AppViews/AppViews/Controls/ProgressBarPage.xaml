@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppViews.Controls.ProgressBarPage">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+
+            <Label Text="Without efect" TextColor="Black" />
+            <ProgressBar Progress="0.3" x:Name="Bar1"/> <!-- O progresso vai de 0 a 1 -->
+            <Label Text="Linear efect" TextColor="Black" />
+            <ProgressBar Progress="0.3" x:Name="Bar2" />
+            <Label Text="SpringIn efect" TextColor="Black" />
+            <ProgressBar Progress="0.3" x:Name="Bar3" />
+            <Label Text="SprintOut efect" TextColor="Black" />
+            <ProgressBar Progress="0.3" x:Name="Bar4" />
+            <Label Text="BounceIn efect" TextColor="Black" />
+            <ProgressBar Progress="0.3" x:Name="Bar5" />
+            <Label Text="BounceOff efect" TextColor="Black" />
+            <ProgressBar Progress="0.3" x:Name="Bar6" />
+            <Label Text="CubicIn efect" TextColor="Black" />
+            <ProgressBar Progress="0.3" x:Name="Bar7" />
+            <Label Text="CubicOut efect" TextColor="Black" />
+            <ProgressBar Progress="0.3" x:Name="Bar8" />
+            <Label Text="SinIn efect" TextColor="Black" />
+            <ProgressBar Progress="0.3" x:Name="Bar9" />
+            <Label Text="SinOut efect" TextColor="Black" />
+            <ProgressBar Progress="0.3" x:Name="Bar10" />            
+            
+            <Button Text="Modificar Barras" Clicked="ModifyProgress" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
