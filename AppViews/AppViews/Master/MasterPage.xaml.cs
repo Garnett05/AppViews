@@ -52,5 +52,13 @@ namespace AppViews.Master
         {
             Detail = new Controls.PickerPage();
         }
+        private void GoSearchBarPage (object sender, EventArgs args)
+        {
+            Detail = new Controls.SearchBarPage();
+        }
+        private void GoSliderStepperPage (object sender, EventArgs args)
+        {
+            Detail = new Controls.SliderStepperPage();
+        }
     }
 }

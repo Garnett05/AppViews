@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppViews.Controls.SearchBarPage">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout Padding="10">
+                <Label Text="Há duas maneiras de utilizar a pesquisa: "/>
+                <Label Text="1 - Retorna o resultado durante a digitação (TextChanged)" />
+                <Label Text="2 - Retorna o resultado após clicar no botão para pesquisar (SearchButtonPressed)" />
+                <Label Text="Obs: Elas são mutuamente exclusivas, pois não há sentido em utilizar ambas" />
+                <StackLayout HeightRequest="2" BackgroundColor="Black"/>
+                <SearchBar 
+                       TextChanged="Search"
+                       CancelButtonColor="Green"
+                       FontAttributes="Italic"
+                       HorizontalTextAlignment="End"
+                       Placeholder="Type the most winning team in the NBA"
+                       PlaceholderColor="Green"
+                       TextColor="Green"                                             
+                       
+                                              
+                       ></SearchBar>
+            <StackLayout x:Name="listResult" HorizontalOptions="Start" Padding="15">
+                
+            </StackLayout>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
