@@ -36,5 +36,9 @@ namespace AppViews.Master
         {
             Detail = new Controls.ButtonPage();
         }
+        private void GoEntryEditorPage (object sender, EventArgs args)
+        {
+            Detail = new Controls.EntryEditorPage();
+        }
     }
 }
