@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppViews.Controls.ImagePage">
+    <ContentPage.Content>
+        <StackLayout x:Name="myStackLayout">
+            <!-- 
+            Fill - preenche todo o stackLayout, deformando a imagem
+            AspectFill - a imagem vai ser aumentada, mas n será deformada
+            AspectFit - adequará o tamanho da imagem ao espaço do stackLayout
+            IsOpaque - define se a imagem tem ou não fundo. Se não tiver, é interessante utilizar este parâmetro por questão de performance
+            -->
+            <Image 
+                Source="https://www.quintoquartobr.com/wp-content/uploads/2014/07/Logo-Celtics.png"
+                Aspect="AspectFit"
+                x:Name="imageOne"
+                IsOpaque="True"
+                VerticalOptions="CenterAndExpand"
+                />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

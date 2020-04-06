@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace AppViews.Controls
+{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class ImagePage : ContentPage
+    {
+        public ImagePage()
+        {
+            InitializeComponent();
+            //imageOne.IsLoading();
+
+            Image celtics = new Image();
+            celtics.Source = ImageSource.FromFile("celtics.png");
+
+            myStackLayout.Children.Add(celtics);
+        }
+    }
+}

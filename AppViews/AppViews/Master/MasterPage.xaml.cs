@@ -64,5 +64,9 @@ namespace AppViews.Master
         {
             Detail = new Controls.SwitchPage();
         }
+        private void GoImagePage (object sender, EventArgs args)
+        {
+            Detail = new Controls.ImagePage();
+        }
     }
 }
