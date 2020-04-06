@@ -40,5 +40,17 @@ namespace AppViews.Master
         {
             Detail = new Controls.EntryEditorPage();
         }
+        private void GoDatePickerPage(object sender, EventArgs args)
+        {
+            Detail = new Controls.DatePickerPage();
+        }
+        private void GoTimePickerPage(object sender, EventArgs args)
+        {
+            Detail = new Controls.TimePickerPage();
+        }
+        private void GoPickerPage(object sender, EventArgs args)
+        {
+            Detail = new Controls.PickerPage();
+        }
     }
 }

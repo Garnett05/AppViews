@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppViews.Controls.PickerPage">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Picker 
+                Title="Atlantic Division" TextColor="Green"                
+                
+                SelectedIndexChanged="ActionMudarIndex"
+                >
+                <Picker.Items>
+                    <x:String>Celtics</x:String>
+                    <x:String>Nets</x:String>
+                    <x:String>Knicks</x:String>
+                    <x:String>Sixers</x:String>
+                    <x:String>Raptors</x:String>
+                </Picker.Items>
+            </Picker>
+            <Label x:Name="result" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

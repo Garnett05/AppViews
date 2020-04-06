@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppViews.Controls.DatePickerPage">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <DatePicker
+                TextColor="Green"
+                Format="dd/MM/yyyy"
+                MinimumDate="01/01/2000"
+                MaximumDate="12/31/2020"
+                x:Name="datePicker"
+                
+                DateSelected="ActinoDateSelected"
+                />
+            <Label Text="After a new date is chosen, the old date and the new date will be shown below" TextColor="Black"/>
+            <Label x:Name="lblResult" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
