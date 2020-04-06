@@ -60,5 +60,9 @@ namespace AppViews.Master
         {
             Detail = new Controls.SliderStepperPage();
         }
+        private void GoSwitchPage (object sender, EventArgs args)
+        {
+            Detail = new Controls.SwitchPage();
+        }
     }
 }
