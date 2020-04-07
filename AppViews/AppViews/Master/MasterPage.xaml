@@ -25,7 +25,8 @@
                 <Button Text="Image" Clicked="GoImagePage" />
                 <Button Text="ListView" Clicked="GoListViewPage" />
                 <Button Text="TableView" Clicked="GoTableViewPage" />
-            </StackLayout>
+                <Button Text="WebView" Clicked="GoWebViewPage" />
+                </StackLayout>
             </ScrollView>
         </ContentPage>
     </MasterDetailPage.Master>

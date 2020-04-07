@@ -76,5 +76,9 @@ namespace AppViews.Master
         {
             Detail = new Controls.TableViewPage();
         }
+        private void GoWebViewPage (object sender, EventArgs args)
+        {
+            Detail = new Controls.WebViewPage();
+        }
     }
 }
