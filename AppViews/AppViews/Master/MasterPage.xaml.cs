@@ -68,5 +68,9 @@ namespace AppViews.Master
         {
             Detail = new Controls.ImagePage();
         }
+        private void GoListViewPage (object sender, EventArgs args)
+        {
+            Detail = new Controls.ListViewPage();
+        }
     }
 }
