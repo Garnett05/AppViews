@@ -72,5 +72,9 @@ namespace AppViews.Master
         {
             Detail = new Controls.ListViewPage();
         }
+        private void GoTableViewPage (object sender, EventArgs args)
+        {
+            Detail = new Controls.TableViewPage();
+        }
     }
 }

@@ -8,6 +8,7 @@
              x:Class="AppViews.Master.MasterPage">
     <MasterDetailPage.Master>
         <ContentPage Title="Menu">
+            <ScrollView>
             <StackLayout>
                 <Button Text="Activity Indicator" Clicked="GoActivityIndicatorPage" />
                 <Button Text="Progress Bar" Clicked="GoProgressBarPage" />
@@ -23,7 +24,9 @@
                 <Button Text="Switch" Clicked="GoSwitchPage" />
                 <Button Text="Image" Clicked="GoImagePage" />
                 <Button Text="ListView" Clicked="GoListViewPage" />
+                <Button Text="TableView" Clicked="GoTableViewPage" />
             </StackLayout>
+            </ScrollView>
         </ContentPage>
     </MasterDetailPage.Master>
     <MasterDetailPage.Detail>
